@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <a href="/">Daftar Mahasiswa</a> | <a href="/tambah_mhs">Tambah Mahasiswa</a>
+    <hr>
+    <h1>Daftar Mahasiswa</h1>
+    <ol>
+        {{#if cek }}
+            {{#each mhs}}
+                <li><h3>{{ this.nama }}</h3></li>
+            {{/each}}
+        {{else}}
+        
+        {{/if}}
+    </ol>
+</body>
+</html>
